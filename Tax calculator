@@ -10,7 +10,7 @@ elif Location == ('CANADA'):
         totalCanada = (int(greeting) * 0.5 + int(greeting))
         print('Go Canada! Your total is $' +  str(totalCanada))
 
-if Province == ('ONTARIO') or Province == ('NEE BRUNSWICK') or Province == ('NOVA SCOTIA'):
+    if Province == ('ONTARIO') or Province == ('NEE BRUNSWICK') or Province == ('NOVA SCOTIA'):
         totalCanada = (int(greeting) * .13 + int(greeting))
         print('Go Canada! Your total is $' +  str(totalCanada))
 
