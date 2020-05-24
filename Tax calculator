@@ -1,0 +1,20 @@
+greeting = input('Thanks for shopping with us. How much are you spending with us today:$')
+Location = input('Thanks, what country are we shipping your product to? ').upper()
+if Location != ('CANADA'):
+    countryPride = input('What is your country\'s acronym? ')
+    print("Go " + countryPride +'! Your total is $' + greeting)
+
+elif Location == ('CANADA'):
+    Province = input('What province are we shipping this to? ').upper()
+    if Province == ('ALBERTA'):
+        totalCanada = (int(greeting) * 0.5 + int(greeting))
+        print('Go Canada! Your total is $' +  str(totalCanada))
+
+if Province == ('ONTARIO') or Province == ('NEE BRUNSWICK') or Province == ('NOVA SCOTIA'):
+        totalCanada = (int(greeting) * .13 + int(greeting))
+        print('Go Canada! Your total is $' +  str(totalCanada))
+
+else:
+    totalCanada = (int(greeting) * .11 + int(greeting))
+    print('Go Canada! Your total is $' + str(totalCanada))
+                
